@@ -1,0 +1,319 @@
+[
+  {
+      "id": 0,
+      "img": "https://habrastorage.org/webt/1n/3u/un/1n3uunz9o6j9wlg8dopaj6qenhq.jpeg",
+      "name": "Маргарита",
+      "desc": "Пицца соус, сыр Моцарелла, томат",
+      "price": 600,
+      "category": 2
+    },
+    {
+      "id": 1,
+      "img": "https://habrastorage.org/webt/25/ig/xw/25igxwes0kdl7pa43s_eqqsvlxc.jpeg",
+      "name": "Пепперони",
+      "desc": "Пицца соус, колбаски пепперони, сыр моцарелла",
+      "price": 700,
+      "category": 2
+
+    },
+    {
+      "id": 2,
+      "img": "https://habrastorage.org/webt/_c/n5/2o/_cn52ovv3glug--ryp0to5y9ixk.jpeg",
+      "name": "Куриная",
+      "desc": "Белый соус, куриное филе, лук зелёный, сыр Моцарелла",
+      "price": 600,
+      "category": 2
+
+    },
+    {
+      "id": 3,
+      "img": "https://habrastorage.org/webt/qc/fs/ni/qcfsnicmqu_zwlh4wv1nj7okqdq.jpeg",
+      "name": "Ассорти Острая",
+      "desc": "Огненный соус Табаджан, пепперони, ветчина, перец болгарский,маслины, сыр Моцарелла, томат",
+      "price": 750,
+      "category": 2
+
+    },
+    {
+      "id": 4,
+      "img": "https://habrastorage.org/webt/fj/f5/ls/fjf5lsug5cabe6rthptdelxq27i.jpeg",
+      "name": "Терияки",
+      "sizes": "Пицца соус, перец болгарский, шампиньоны, грибы шиитаке, лук красный, тофу, соус терияки, кунжут",
+      "price": 625,
+      "category": 2
+
+    },
+    {
+      "id": 5,
+      "img": "https://habrastorage.org/webt/v_/lu/_z/v_lu_zaprbx64hrujmb__afswva.jpeg",
+      "name": "Мексиканская",
+      "desc": "Соус Болоньезе, соус томатный острый, сыр Моцарелла, пепперони,перец болгарский, перец халапеньо, лук жареный",
+      "price": 785,
+      "category": 2
+
+    },
+    {
+      "id": 6,
+      "img": "https://habrastorage.org/webt/by/5b/vz/by5bvzxofhhnoketq4qqhzcufcy.jpeg",
+      "name": "Охотничья",
+      "desc": "Пицца соус, сыр моцарелла, томат, охотничьи колбаски, перец болгарский, маслины, лук красный и лук фри",
+      "price": 685,
+      "category": 2
+
+    },
+    {
+      "id": 7,
+      "img": "https://habrastorage.org/webt/q0/ba/ex/q0baexv4mezsgmr9ppz2ob4nakm.jpeg",
+      "name": "Двойная Пепперони",
+      "desc": "Классическая Пепперони с пицца-соусом, сыром моцарелла и с двойной порцией колбасок пепперони",
+      "price": 950,
+      "category": 2
+
+    },
+    {
+      "id": 8,
+      "img": "https://habrastorage.org/webt/hp/ut/m2/hputm2psh8cyqnfkkz27dzogowg.jpeg",
+      "name": "Четыре сыра",
+      "desc": "Пицца соус, сыры Моцарелла, Эмменталь, Блю Чиз и Чеддер",
+      "price": 700,
+      "category": 2
+
+    },
+    {
+      "id": 9,
+      "img": "https://habrastorage.org/webt/j0/qc/l9/j0qcl9m2ey-amjm9spyjr1ev4e4.jpeg",
+      "name": "Пицца BBQ",
+      "desc": "Пицца соус, соус Барбекю, сыр Моцарелла, куриное филе варено-копченое, шампиньоны, ветчина, бекон",
+      "price": 700,
+      "category": 2
+
+    },
+    {
+      "id": 10,
+      "img": "https://habrastorage.org/webt/0o/kc/vq/0okcvqxpc545z04epsfca-bvnao.jpeg",
+      "name": "Ассорти чоризо",
+      "desc": "Томатный пицца-соус, сыр моцарелла, пепперони, колбаски чоризо,колбаски тоскана, перец халапеньо",
+      "price": 995,
+      "category": 2
+
+    },
+    {
+      "id": 11,
+      "img": "https://habrastorage.org/webt/um/_-/nu/um_-numjfzo5qsypx8ehpgwlixw.jpeg",
+      "name": "СЕТ ЗАПЕЧЕННЫЙ",
+      "desc": "Запеченная Калифорния, Запеченный Сырный с Крабом",
+      "price": 570,
+      "category": 3
+
+    },
+    {
+      "id": 12,
+      "img": "https://habrastorage.org/webt/m3/6e/ma/m36emakdnyxkuwfqazdrv1rb_vi.jpeg",
+      "name": "СЕТ САММЕР ХИТ",
+      "desc": "Филадельфия с Копченым Лососем, Калифорния в Икре, Фьюжн",
+      "price": 700,
+      "category": 3
+
+    },
+    {
+      "id": 13,
+      "img": "https://habrastorage.org/webt/_s/1a/m7/_s1am7iq2fpzsivcftxcwrqex3w.jpeg",
+      "name": "СЕТ ХИТ",
+      "desc": "Филадельфия, Калифорния в Икре, Мини Ролл с Авокадо, Мини Ролл с Огурцом",
+      "price": 800,
+      "category": 3
+
+    },
+    {
+      "id": 14,
+      "img": "https://habrastorage.org/webt/rp/ux/v0/rpuxv0mofrsrfd2qzuyh-znuxu8.jpeg",
+      "name": "СЕТ ОСТРЫЙ ЗАПЕЧЕННЫЙ",
+      "desc": "Запеченный Острый с Крабом, Запеченный Острый с Лососем,Запеченный Острый с Мидиями, Запеченный Острый с Креветкой",
+      "price": 999,
+      "category": 3
+
+    },
+    {
+      "id": 15,
+      "img": "https://habrastorage.org/webt/tu/g-/dm/tug-dmfqptwhysbgqh5x8itjwpi.jpeg",
+      "name": "СЕТ КАЛИФОРНИЯ",
+      "desc": "Запеченная Калифорния, Запеченный Острый с Мидиями, Калифорния в Кунжуте, Калифорния в Икре",
+      "price": 1099,
+      "category": 3
+
+    },
+    {
+      "id": 16,
+      "img": "https://habrastorage.org/webt/mj/y5/bp/mjy5bpj4hvcjhhq0zqxr_erhkgo.jpeg",
+      "name": "СЕТ ГУРМАН",
+      "desc": "Запеченный Дары Моря, Запеченный Дабл Хит, Филадельфия, Калифорния в Икре",
+      "price": 1300,
+      "category": 3
+
+    },
+    {
+      "id": 17,
+      "img": "https://habrastorage.org/webt/px/lw/vm/pxlwvmwjwar74o8bivhdk_rcgja.jpeg",
+      "name": "СЕТ БОЛЬШОЙ ЗАПЕЧЕННЫЙ",
+      "desc": "Запеченная Филадельфия, Запеченная Калифорния, Запеченный Острый с Крабом, Запеченный Острый с Мидиями, Запеченный Дабл Хит",
+      "price": 1499,
+      "category": 3
+
+    },
+    {
+      "id": 18,
+      "img": "https://habrastorage.org/webt/bd/c8/ya/bdc8yay-ip5umyw7rf2lsr9p7vo.jpeg",
+      "name": "СЕТ СУПЕР",
+      "desc": "Калифорния в Кунжуте, Филадельфия, Канада с Сыром, Калифорния в Икре, Запеченная Калифорния, Запеченный Сырный с Мидиями,Запеченный Острый с Креветкой, Запеченный Острый с Крабом",
+      "price": 1999,
+      "category": 3
+
+    },
+    {
+      "id": 19,
+      "img": "https://habrastorage.org/webt/vy/c1/on/vyc1onn0x3wr467rf75on6d6tca.jpeg",
+      "name": "СЕТ ОГРОМНЫЙ",
+      "desc": "Канада с Сыром, Филадельфия, Филадельфия с Креветкой, Калифорния в Икре, Запеченный Сырный с Мидиями, Запеченный Острый с Крабом, ЭбиТемпура, Калифорния Темпура, Веган, Бекон Спайси, Ахито, Острый с Копченым Лососем, Мини Ролл с Огурцом, Мини Ролл с Авокадо",
+      "price": 4500,
+      "category": 3
+
+    },
+    {
+      "id": 20,
+      "img": "https://habrastorage.org/webt/nv/qj/kw/nvqjkwhuwx_vlrz0shltoa0mghy.jpeg",
+      "name": "Филадельфия",
+      "desc": "Рис, лосось, сыр сливочный, авокадо, водоросли нори",
+      "price": 400,
+      "category": 4
+
+    },
+    {
+      "id": 21,
+      "img": "https://habrastorage.org/webt/ha/2-/gz/ha2-gzxkz9ehgeoz2m9lmpxf8ba.jpeg",
+      "name": "Снежный краб",
+      "desc": "Рис, водоросли Нори, огурцы свежие, снежный краб, икра масаго, хот соус, соус Унаги, кунжут",
+      "price": 400,
+      "category": 4
+
+    },
+    {
+      "id": 22,
+      "img": "https://habrastorage.org/webt/tk/co/rn/tkcornpg_orksc-kae-xavdlha4.jpeg",
+      "name": "Калифорния с креветкой",
+      "desc": "Рис, креветка, авокадо, огурец свежий, икра масаго, майонез,водоросли нори",
+      "price": 500,
+      "category": 4
+
+    },
+    {
+      "id": 23,
+      "img": "https://habrastorage.org/webt/2g/0_/vz/2g0_vznvi2pt0bkgubopb63tlk4.jpeg",
+      "name": "Ролл с лососем",
+      "desc": "Рис, лосось, водоросли нори",
+      "price": 250,
+      "category": 4
+
+    },
+    {
+      "id": 24,
+      "img": "https://habrastorage.org/webt/x2/09/fp/x209fp6nkak4re8h6lbnrfhg-64.jpeg",
+      "name": "Ролл с угрём",
+      "desc": "Рис, угорь, соус унаги, кунжут, водоросли нори",
+      "price": 250,
+      "category": 4
+
+    },
+    {
+      "id": 25,
+      "img": "https://habrastorage.org/webt/6g/ab/mk/6gabmkjgxrsuuuf6toylx7i51gu.jpeg",
+      "name": "Миядзаки",
+      "desc": "Рис, лосось, сыр сливочный, огурец свежий, икра масаго, лук зеленый, водоросли нори, кунжут",
+      "price": 400,
+      "category": 4
+
+    },
+    {
+      "id": 26,
+      "img": "https://habrastorage.org/webt/7x/hl/ot/7xhlotlfmq0nilhwre-lgqzxyei.jpeg",
+      "name": "Запеченный ролл с креветкой",
+      "desc": "Рис, водоросли Нори, креветки отварные, сыр сливочный, огурцы свежие, лук зелёный, икра масаго чёрная, соус белый, соус Унаги,кунжут",
+      "price": 400,
+      "category": 4
+
+    },
+    {
+      "id": 27,
+      "img": "https://habrastorage.org/webt/-t/sq/gb/-tsqgbuwa-p8t8m7nvnaahfsdsc.jpeg",
+      "name": "Запеченный ролл с лососем",
+      "desc": "Рис, водоросли Нори, лосось, сыр сливочный, огурцы свежие, икра масаго, соус белый, соус Унаги, кунжут",
+      "price": 700,
+      "category": 4
+
+    },
+    {
+      "id": 28,
+      "img": "https://habrastorage.org/webt/nf/nb/hi/nfnbhizsck9pt9dhyxzzt-_sj9u.jpeg",
+      "name": "Цезарь Маки",
+      "desc": "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь, сыр пармезан, водоросли нори",
+      "price": 350,
+      "category": 4
+
+    },
+    {
+      "id": 29,
+      "img": "https://habrastorage.org/webt/bq/hu/c4/bqhuc4fonryaddiyjz4gb19k2rk.jpeg",
+      "name": "Запеченный ролл со снежным крабом",
+      "desc": "Рис, водоросли Нори, снежный краб, огурцы свежие, соус белый, соус Унаги, кунжут",
+      "price": 350,
+      "category": 4
+
+    },
+    
+    {
+      "id": 30,
+      "img": "https://habrastorage.org/webt/ic/q9/ke/icq9keiq7ahqwgjong0r4ulinb8.jpeg",
+      "name": "Терияки Гриль",
+      "desc": "Рис, жареная кожа лосося, авокадо, соус терияки, майонез, икра масаго, стружка тунца, водоросли нори, лук зеленый",
+      "price": 300,
+      "category": 4
+
+    },
+    {
+      "id": 31,
+      "img": "https://habrastorage.org/webt/74/0h/hz/740hhz8az2xtibysstdcg9alqko.jpeg",
+      "name": "Суши Лосось",
+      "desc": "Рис, лосось",
+      "price": 300,
+      "category": 5
+
+    },
+    
+    {
+      "id": 32,
+      "img": "https://habrastorage.org/webt/de/dv/yf/dedvyfcqh0rxlt877lhq2ioxmdu.jpeg",
+      "name": "Спайси Угорь",
+      "desc": "Рис, угорь копченый, соус спайс, водоросли нори",
+      "price": 250,
+      "category": 5
+
+    },
+    {
+      "id": 33,
+      "img": "https://habrastorage.org/webt/qb/z_/-p/qbz_-p-3r9sdlkjsfhzdlzibz0i.jpeg",
+      "name": "Спайси Лосось",
+      "desc": "Рис, лосось, соус спайс, водоросли нори",
+      "price": 270,
+      "category": 5
+
+    },
+    
+    {
+      "id": 34,
+      "img": "https://habrastorage.org/webt/dy/vh/va/dyvhvauvyzijliboouysihm1qem.jpeg",
+      "name": "Спайси Креветка",
+      "desc": "Рис, креветка отварная, соус спайс, водоросли нори",
+      "price": 245,
+      "category": 5
+
+    }
+  ]
