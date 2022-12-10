@@ -1,17 +1,11 @@
 import React from "react";
 import "./App.scss";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import Nav from "./components/Nav";
-import ItemsBlock from "./components/ItemsBlock";
-import Skeleton from "./components/Skeleton";
+import Catalog from "./pages/Catalog";
+import Main from "./pages/Main";
+import Delivery from "./pages/Delivery";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
 
@@ -20,10 +14,16 @@ function App() {
     <div className="wrapper">
       <Header />
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <footer className="footer">
+        <img src="img/l2.png" alt="logo" />
+      </footer>
     </div>
   );
 }

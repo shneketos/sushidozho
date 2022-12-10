@@ -10,10 +10,10 @@ function Header() {
           </div>
         </Link>
         <div className="header-center">
-          <a href="/">Меню</a>
-          <a href="/">Акции</a>
-          <a href="/">Доставка</a>
-          <a href="/">О нас</a>
+          <Link to="/">Главная</Link>
+          <Link to="/catalog">Меню</Link>
+          <Link to="/delivery">Доставка</Link>
+          <Link to="/about-us">О компании</Link>
         </div>
         <div className="header-cart">
           <Link to="/cart" className="button button--cart">

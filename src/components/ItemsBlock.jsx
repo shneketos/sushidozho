@@ -22,15 +22,11 @@ function ItemsBlock({ name, price, desc, img }) {
           <div className="catalog-item-desc">{desc}</div>
           <div className="catalog-item-bottom">
             <div className="catalog-item-price">{price} ₽</div>
-            <div className="addcart2">
-              <button onClick={onClickDel} className="remove">
-                <img src="/img/minus.svg" alt="-" width={14} />
-              </button>
-              <div className="count">{Count}</div>
-              <button onClick={onClickAdd} className="plus">
-                <img src="/img/plus.svg" alt="+" width={14} />
-              </button>
-            </div>
+            <button onClick={onClickAdd} className="Additem">
+              <b>+</b>
+              <span>Добавить</span>
+              <i>{Count}</i>
+            </button>
           </div>
         </div>
       </div>
