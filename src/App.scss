@@ -8,7 +8,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  background-color: aqua;
+  background-color: #fff;
   a,h1,span,p {
     color: black;
   }
@@ -286,6 +286,7 @@ a {
 }
 .cart {
   margin: 30px 15% 0 15%;
+  min-height: 800px;
   &-top {
     align-items: center;
     display: flex;
@@ -409,6 +410,8 @@ a {
         display: flex;
         justify-content: flex-end;
         width: 4%;
+        background: none;
+        border: none;
         img {
           width: 10px;
           height: 10px;
@@ -498,6 +501,46 @@ a {
         span {
           color: #fe5f1e;
         }
+      }
+    }
+  }
+}
+.CartEmpty {
+  margin: 250px auto;
+  text-align: center;
+  width: 650px;
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #777;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    line-height: 145%;
+  }
+  .smile {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  .buttontomenu {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    justify-content: center;
+    min-width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 315px;
+    background-color: #fff;
+    &:hover {
+      border: 1px solid #fe5f1e;
+      a {
+        color: #fe5f1e;
       }
     }
   }

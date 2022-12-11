@@ -1,42 +1,66 @@
 import React from "react";
-
+import { useSelector, useDispatch } from "react-redux";
+import qs from "qs";
+import { useNavigate } from "react-router-dom";
+import { setCategoryId, setFilters } from "../redux/slices/filterSlice";
+import { fetchItems } from "../redux/slices/itemSlice";
 import Categories from "../components/Categories";
 import ItemsBlock from "../components/ItemsBlock";
 import Skeleton from "../components/Skeleton";
 
 export const Catalog = () => {
-  const [items, setItems] = React.useState([]);
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [categoryId, setcategoryId] = React.useState(0);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const isSearch = React.useRef(false);
+  const isMounted = React.useRef(false);
+  const categoryId = useSelector((state) => state.filterSlice.categoryId);
+
+  const { items, status } = useSelector((state) => state.itemSlice);
+
+  const onClickCategory = (id) => {
+    dispatch(setCategoryId(id));
+  };
+
+  const getItems = async () => {
+    dispatch(fetchItems({ categoryId }));
+  };
 
   React.useEffect(() => {
-    setIsLoading(true);
-    fetch(
-      `https://637d04ca16c1b892ebc5bfcd.mockapi.io/Items?${
-        categoryId > 0 ? `category=${categoryId}` : ""
-      }`
-    )
-      .then((res) => {
-        return res.json();
-      })
-      .then((items) => {
-        setItems(items);
-        setIsLoading(false);
+    if (isMounted.current) {
+      const queryString = qs.stringify({
+        categoryId,
       });
+      navigate(`?${queryString}`);
+    }
+    isMounted.current = true;
+  }, [categoryId]);
+
+  React.useEffect(() => {
+    if (window.location.search) {
+      const params = qs.parse(window.location.search.substring(1));
+
+      dispatch(setFilters({ ...params }));
+    }
+    isSearch.current = false;
+  }, []);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+    if (!isSearch.current) {
+      getItems();
+    }
+    isSearch.current = false;
   }, [categoryId]);
 
   return (
     <div className="wrapper">
-      <Categories
-        value={categoryId}
-        onClickCategory={(id) => setcategoryId(id)}
-      />
+      <Categories value={categoryId} onClickCategory={onClickCategory} />
       <div className="catalog-wrapper">
         <div className="title">
           <h1>Все</h1>
         </div>
         <div className="catalog-list">
-          {isLoading
+          {status === "loading"
             ? [...new Array(12)].map((_, index) => <Skeleton key={index} />)
             : items.map((item) => <ItemsBlock key={item.id} {...item} />)}
         </div>

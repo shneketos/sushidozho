@@ -1,62 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import CartItem from "../components/CartItem";
+import { clearItems } from "../redux/slices/cartSlice";
+import CartEmpty from "../components/CartEmpty";
 
 export const Cart = () => {
+  const dispatch = useDispatch();
+  const { items, totalPrice } = useSelector((state) => state.cartSlice);
+  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+
+  const onClickClear = () => {
+    if (window.confirm("Очистить корзину?")) {
+      dispatch(clearItems());
+    }
+  };
+
+  if (!totalPrice) {
+    return <CartEmpty />;
+  }
+
   return (
-    <div class="cart">
-      <div class="cart-top">
-        <h2 class="cart-top-title">Корзина</h2>
-        <div class="cart-top-clear">
+    <div className="cart">
+      <div className="cart-top">
+        <h2 className="cart-top-title">Корзина</h2>
+        <div onClick={onClickClear} className="cart-top-clear">
           <span>Очистить корзину</span>
         </div>
       </div>
-      <div class="cart-items">
-        <div class="cart-item">
-          <div class="cart-item-img">
-            <img
-              class="catalog-item-img"
-              src="../img/rolls/fila.jpg"
-              alt="name"
-            />
-          </div>
-          <div class="cart-item-info">
-            <h3>Fila</h3>
-            <p>Opisanie</p>
-          </div>
-          <div class="cart-item-count">
-            <div class="button button--minus">
-              <img src="../img/minus.svg" alt="-" />
-            </div>
-            <b>2</b>
-            <div class="button button--plus">
-              <img src="../img/plus.svg" alt="-" />
-            </div>
-          </div>
-          <div class="cart-item-price">
-            <b>500 ₽</b>
-          </div>
-          <div class="cart-item-remove">
-            <div class="button button--del">
-              <img src="../img/del.svg" alt="x" />
-            </div>
-          </div>
-        </div>
-        <div class="cart-bottom">
-          <div class="cart-bottom-details">
+      <div className="cart-items">
+        {items.map((item) => (
+          <CartItem key={item.id} {...item} />
+        ))}
+        <div className="cart-bottom">
+          <div className="cart-bottom-details">
             <span>
               {" "}
-              Всего : <b>1 шт.</b>{" "}
+              Всего : <b>{totalCount} шт.</b>{" "}
             </span>
             <span>
               {" "}
-              Сумма заказа: <b>500 ₽</b>{" "}
+              Сумма заказа: <b> {totalPrice} ₽</b>{" "}
             </span>
           </div>
-          <div class="cart-bottom-buttons">
-            <Link to="/" class="button-back">
+          <div className="cart-bottom-buttons">
+            <Link to="/" className="button-back">
               <span>Вернуться назад</span>
             </Link>
-            <div class="button-pay">
+            <div className="button-pay">
               <span>Оплатить сейчас</span>
             </div>
           </div>
