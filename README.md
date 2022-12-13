@@ -1,6 +1,6 @@
 # `SUSHIDO ZHO PJOECT`
 
-This is version for web-development in university.
+Demo: https://sushidozho.vercel.app/
 
 ## Available Scripts
 
