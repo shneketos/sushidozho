@@ -7,6 +7,7 @@ export const About = () => {
         <li className="about-top">
           Сушидо Жо - сеть доставки еды от известного российского рэпера Bushido
           Zho
+          Шинкевич Никита РПИС-01 
         </li>
         <li>
           <div className="about-audio">
